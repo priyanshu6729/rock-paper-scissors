@@ -118,8 +118,8 @@ let score = (JSON.parse(localStorage.getItem('score'))) ||
       document.querySelector('.display-result').innerHTML = result;
 
       document.querySelector('.display-moves').innerHTML = `You
-    <img src="${playerMove}-emoji.png" class="game-icon">
-    <img src="${computerMove}-emoji.png" class="game-icon">
+    <img src="${playerMove.toLowerCase()}-emoji.png" class="game-icon">
+    <img src="${computerMove.toLowerCase()}-emoji.png" class="game-icon">
     Computer`;
 
     }
